@@ -1,0 +1,44 @@
+{
+  "flowType": "civil",
+  "imagePath": "/images/civil/pre-litigation-settlement-flow.png",
+  "areas": [
+    {
+      "id": "pre-litigation-settlement",
+      "position": {
+        "x": 40,
+        "y": 40,
+        "width": 20,
+        "height": 10
+      },
+      "title": "제소전화해",
+      "details": {
+        "title": "제소전화해",
+        "description": "소송 제기 전 화해를 통한 분쟁해결 절차입니다.",
+        "services": {
+          "plaintiff": [
+            {
+              "name": "화해교섭",
+              "price": "400,000",
+              "duration": "1주",
+              "description": "상대방과의 화해교섭 진행"
+            }
+          ],
+          "defendant": [
+            {
+              "name": "화해각서 작성",
+              "price": "200,000",
+              "duration": "2일",
+              "description": "화해각서 작성 및 공증"
+            }
+          ]
+        },
+        "tips": [
+          "화해 가능성 검토",
+          "화해금액 산정",
+          "이행보증 방안",
+          "화해각서 작성"
+        ]
+      }
+    }
+  ]
+} 

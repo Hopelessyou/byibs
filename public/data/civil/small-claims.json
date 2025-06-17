@@ -1,0 +1,43 @@
+{
+  "flowType": "civil",
+  "imagePath": "/images/civil/small-claims-flow.png",
+  "areas": [
+    {
+      "id": "small-claims",
+      "position": {
+        "x": 40,
+        "y": 10,
+        "width": 20,
+        "height": 10
+      },
+      "title": "소액사건",
+      "details": {
+        "title": "소액사건",
+        "description": "소액사건심판법에 따른 간이절차입니다.",
+        "services": {
+          "plaintiff": [
+            {
+              "name": "소액사건 소장 작성",
+              "price": "300,000",
+              "duration": "3일",
+              "description": "소액사건용 소장 작성"
+            },
+            {
+              "name": "소액사건 진행 관리",
+              "price": "500,000",
+              "duration": "2주",
+              "description": "소액사건 절차 관리"
+            }
+          ],
+          "defendant": []
+        },
+        "tips": [
+          "소액사건 요건 확인",
+          "간이절차 활용",
+          "변호사 선임 여부 검토",
+          "소송비용 절감 방안"
+        ]
+      }
+    }
+  ]
+} 

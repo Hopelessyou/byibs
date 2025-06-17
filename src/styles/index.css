@@ -1,0 +1,68 @@
+
+/* Main CSS entrypoint - imports all partials */
+@import './base.css';
+@import './typography.css';
+@import './animations.css';
+@import './components.css';
+@import './effects.css';
+@import './utils.css';
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .card-3d {
+    transform: scale(0.95);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: visible; /* Ensure border is fully visible */
+  }
+  
+  .premium-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Improve text visibility on premium cards on mobile */
+  .premium-card h3 {
+    color: #111827; /* text-gray-900 */
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+  }
+  
+  .premium-card p {
+    color: #1f2937; /* text-gray-800 */
+    font-weight: 500;
+  }
+
+  /* Process steps better display on mobile */
+  .process-steps .absolute {
+    left: 4px;
+  }
+  
+  .mobile-access-container .device-list {
+    gap: 1rem;
+  }
+}
+
+/* Additional fix for border visibility on smaller screens */
+@media (max-width: 480px) {
+  .card-3d {
+    transform: scale(0.9);
+    margin: 1rem auto;
+  }
+  
+  /* Make text even more visible on very small screens */
+  .premium-card h3, 
+  .premium-card .text-xl {
+    color: #000000;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Enhanced text visibility for all slides */
+  .expert-review-container h3,
+  .security-feature h4,
+  .process-steps h3,
+  .mobile-access-container .text-sm {
+    color: #0D2240;
+    font-weight: 600;
+  }
+}

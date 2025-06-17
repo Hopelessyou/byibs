@@ -1,0 +1,159 @@
+
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Layout from '@/components/layout/Layout';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Checkbox } from '@/components/ui/checkbox';
+import { toast } from 'sonner';
+import { useAuth } from '@/contexts/AuthContext';
+import { Eye, EyeOff, Scale, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const LawyerLoginPage = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+  const { login } = useAuth();
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      // 데모 목적으로는 lawyer@example.com을 변호사 계정으로 처리
+      if (email === 'lawyer@example.com' && password === 'password123') {
+        // 실제로는 API 호출 후 응답 처리
+        const mockResponse = { token: 'lawyer-demo-token', userId: 'lawyer-123', role: 'lawyer' };
+        
+        // 로그인 처리
+        login(mockResponse.token, mockResponse.userId, rememberMe);
+        
+        // 변호사 역할 저장
+        localStorage.setItem('userRole', 'lawyer');
+        
+        toast.success('변호사님, 환영합니다!');
+        navigate('/lawyer/dashboard');
+      } else {
+        toast.error('이메일 또는 비밀번호가 올바르지 않습니다.');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      toast.error('로그인 처리 중 오류가 발생했습니다.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <Layout>
+      <div className="min-h-[80vh] flex items-center justify-center py-12 px-4">
+        <div className="max-w-md w-full space-y-8">
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <Scale className="h-16 w-16 text-legal-primary" />
+            </div>
+            <h1 className="text-2xl font-bold text-legal-primary">변호사 포털 로그인</h1>
+            <p className="mt-2 text-gray-600">변호사 계정으로 로그인하여 사건을 관리하세요</p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-xl shadow-elegant space-y-6 border border-gray-100">
+            <form onSubmit={handleLogin} className="space-y-5">
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-gray-700">이메일</Label>
+                  <div className="relative">
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      placeholder="lawyer@example.com" 
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="pl-3"
+                      required
+                      disabled={isLoading}
+                    />
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <Label htmlFor="password" className="text-gray-700">비밀번호</Label>
+                    <Link to="/forgot-password" className="text-xs text-legal-accent hover:underline">
+                      비밀번호를 잊으셨나요?
+                    </Link>
+                  </div>
+                  <div className="relative">
+                    <Input 
+                      id="password" 
+                      type={showPassword ? "text" : "password"} 
+                      placeholder="••••••••" 
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      className="pr-10"
+                      required
+                      disabled={isLoading}
+                    />
+                    <button 
+                      type="button"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                      onClick={() => setShowPassword(!showPassword)}
+                    >
+                      {showPassword ? (
+                        <EyeOff className="h-4 w-4" />
+                      ) : (
+                        <Eye className="h-4 w-4" />
+                      )}
+                    </button>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <Checkbox 
+                      id="remember" 
+                      checked={rememberMe} 
+                      onCheckedChange={(checked) => setRememberMe(checked === true)}
+                    />
+                    <Label htmlFor="remember" className="text-sm font-normal text-gray-600">로그인 상태 유지</Label>
+                  </div>
+                </div>
+              </div>
+              
+              <Button 
+                type="submit" 
+                className="w-full bg-legal-primary hover:bg-legal-secondary"
+                disabled={isLoading}
+              >
+                {isLoading ? '처리 중...' : '로그인'}
+              </Button>
+            </form>
+            
+            <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
+              <ShieldCheck className="h-4 w-4 text-green-500" />
+              <span>법률 정보 보호를 위한 보안 로그인</span>
+            </div>
+            
+            <div className="pt-4 border-t border-gray-200">
+              <div className="text-center text-sm text-gray-600">
+                <p>데모 계정: lawyer@example.com / password123</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <p className="text-sm text-gray-600">
+              일반 사용자이신가요? <Link to="/login" className="text-legal-accent font-medium hover:underline">여기서 로그인</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default LawyerLoginPage;

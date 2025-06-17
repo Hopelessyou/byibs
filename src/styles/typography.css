@@ -1,0 +1,49 @@
+
+/* Premium Typography */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Noto Serif KR', serif;
+}
+
+.font-sans {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Document creation page specific styling */
+.document-creation-page h1 {
+  @apply text-4xl mb-6 font-playfair;
+  letter-spacing: -0.04em;
+}
+
+.document-creation-page .premium-content {
+  @apply max-w-6xl mx-auto;
+}
+
+/* Legal term tooltip styling with premium design */
+.legal-term {
+  border-bottom: 1px dotted hsl(var(--accent));
+  position: relative;
+  cursor: help;
+  transition: all 0.2s ease;
+}
+
+.legal-term:hover {
+  color: hsl(var(--accent));
+}
+
+/* Enhanced selection color */
+::selection {
+  background-color: rgba(var(--accent), 0.2);
+  color: hsl(var(--accent-foreground));
+}

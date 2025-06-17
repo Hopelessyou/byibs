@@ -1,0 +1,103 @@
+{
+  "category": "기업",
+  "services": [
+    {
+      "name": "회사 설립 대행",
+      "subCategory": "설립/운영",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "정관 작성·변경",
+      "subCategory": "설립/운영",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "의사록 작성(주주총회/이사회)",
+      "subCategory": "설립/운영",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "주식양도 계약서",
+      "subCategory": "설립/운영",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "회사 법무 관리 자문",
+      "subCategory": "설립/운영",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "NDA 작성·검토",
+      "subCategory": "계약",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "MOU 작성",
+      "subCategory": "계약",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "공급계약서 작성",
+      "subCategory": "계약",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "하도급 계약 검토",
+      "subCategory": "계약",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "가맹계약서 검토",
+      "subCategory": "계약",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "공문 통지 작성",
+      "subCategory": "계약",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "정기자문",
+      "subCategory": "기타",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "분쟁자문",
+      "subCategory": "기타",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "M&A 자문",
+      "subCategory": "기타",
+      "price": "",
+      "duration": "",
+      "description": ""
+    }
+  ]
+} 

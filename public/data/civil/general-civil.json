@@ -1,0 +1,43 @@
+{
+  "flowType": "civil",
+  "imagePath": "/images/civil/civil-flow.png",
+  "areas": [
+    {
+      "id": "general-civil",
+      "position": {
+        "x": 10,
+        "y": 10,
+        "width": 20,
+        "height": 10
+      },
+      "title": "일반민사",
+      "details": {
+        "title": "일반민사",
+        "description": "일반적인 민사소송 절차입니다.",
+        "services": {
+          "plaintiff": [
+            {
+              "name": "소장 작성",
+              "price": "500,000",
+              "duration": "1주",
+              "description": "민사소장 작성 및 제출 대행"
+            },
+            {
+              "name": "소송 진행 관리",
+              "price": "1,000,000",
+              "duration": "1개월",
+              "description": "소송 전 과정 관리 및 대응"
+            }
+          ],
+          "defendant": []
+        },
+        "tips": [
+          "소장 제출 전 증거 확보",
+          "소멸시효 확인",
+          "관할법원 확인",
+          "소송비용 산정"
+        ]
+      }
+    }
+  ]
+} 

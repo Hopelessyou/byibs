@@ -1,0 +1,59 @@
+{
+  "category": "행정",
+  "services": [
+    {
+      "name": "행정심판 청구서",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "행정심판 대리",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "운전면허 구제",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "산재 신청·이의 대행",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "행정소송 소장(회당)",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "행정소송 출석(회당)",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "집행정지 신청",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "후속조치 자문",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "행정처분 이의신청서 작성",
+      "price": "",
+      "duration": "",
+      "description": ""
+    }
+  ]
+} 

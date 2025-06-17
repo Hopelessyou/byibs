@@ -1,0 +1,44 @@
+{
+  "flowType": "civil",
+  "imagePath": "/images/civil/civil-mediation-flow.png",
+  "areas": [
+    {
+      "id": "civil-mediation",
+      "position": {
+        "x": 10,
+        "y": 40,
+        "width": 20,
+        "height": 10
+      },
+      "title": "민사조정절차",
+      "details": {
+        "title": "민사조정절차",
+        "description": "법원의 조정위원회를 통한 분쟁해결 절차입니다.",
+        "services": {
+          "plaintiff": [
+            {
+              "name": "조정신청",
+              "price": "300,000",
+              "duration": "3일",
+              "description": "민사조정 신청서 작성 및 제출"
+            }
+          ],
+          "defendant": [
+            {
+              "name": "조정 참여 지원",
+              "price": "400,000",
+              "duration": "반일",
+              "description": "조정위원회 출석 및 협상 지원"
+            }
+          ]
+        },
+        "tips": [
+          "조정 적합성 검토",
+          "합의안 준비",
+          "조정서 작성",
+          "조정 불성립 시 대응"
+        ]
+      }
+    }
+  ]
+} 

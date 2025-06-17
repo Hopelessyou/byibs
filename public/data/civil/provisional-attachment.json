@@ -1,0 +1,44 @@
+{
+  "flowType": "civil",
+  "imagePath": "/images/civil/civil-flow.png",
+  "areas": [
+    {
+      "id": "provisional-attachment",
+      "position": {
+        "x": 40,
+        "y": 70,
+        "width": 20,
+        "height": 10
+      },
+      "title": "가압류",
+      "details": {
+        "title": "가압류",
+        "description": "채권 회수를 위한 임시적 압류 절차입니다.",
+        "services": {
+          "plaintiff": [
+            {
+              "name": "가압류 신청",
+              "price": "500,000",
+              "duration": "1주",
+              "description": "가압류 신청서 작성 및 제출"
+            }
+          ],
+          "defendant": [
+            {
+              "name": "가압류 집행",
+              "price": "300,000",
+              "duration": "3일",
+              "description": "가압류 집행 절차 진행"
+            }
+          ]
+        },
+        "tips": [
+          "압류 가능 재산 확인",
+          "보증금 준비",
+          "집행관 선임",
+          "이의신청 대응"
+        ]
+      }
+    }
+  ]
+} 

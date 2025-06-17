@@ -1,0 +1,35 @@
+{
+  "category": "노동",
+  "services": [
+    {
+      "name": "근로계약서 작성/검토",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "산업재해보상",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "직장 내 괴롭힘 신고",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "부당해고소송 소장",
+      "price": "",
+      "duration": "",
+      "description": ""
+    },
+    {
+      "name": "임금체불 소장",
+      "price": "",
+      "duration": "",
+      "description": ""
+    }
+  ]
+} 

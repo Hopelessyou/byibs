@@ -1,0 +1,44 @@
+{
+  "flowType": "civil",
+  "imagePath": "/images/civil/civil-flow.png",
+  "areas": [
+    {
+      "id": "provisional-disposition",
+      "position": {
+        "x": 70,
+        "y": 40,
+        "width": 20,
+        "height": 10
+      },
+      "title": "가처분",
+      "details": {
+        "title": "가처분",
+        "description": "본안 소송 전 임시적 권리보호를 위한 절차입니다.",
+        "services": {
+          "plaintiff": [
+            {
+              "name": "가처분 신청",
+              "price": "600,000",
+              "duration": "1주",
+              "description": "가처분 신청서 작성 및 제출"
+            }
+          ],
+          "defendant": [
+            {
+              "name": "가처분 진행 관리",
+              "price": "800,000",
+              "duration": "2주",
+              "description": "가처분 절차 전 과정 관리"
+            }
+          ]
+        },
+        "tips": [
+          "가처분 요건 확인",
+          "보증금 산정",
+          "본안 소송 준비",
+          "이의신청 대응"
+        ]
+      }
+    }
+  ]
+} 

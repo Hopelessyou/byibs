@@ -1,0 +1,44 @@
+{
+  "flowType": "civil",
+  "imagePath": "/images/civil/payment-order-flow.png",
+  "areas": [
+    {
+      "id": "payment-order",
+      "position": {
+        "x": 70,
+        "y": 10,
+        "width": 20,
+        "height": 10
+      },
+      "title": "지급명령",
+      "details": {
+        "title": "지급명령",
+        "description": "채권 회수를 위한 지급명령 절차입니다.",
+        "services": {
+          "plaintiff": [
+            {
+              "name": "지급명령 신청",
+              "price": "200,000",
+              "duration": "2일",
+              "description": "지급명령 신청서 작성 및 제출"
+            }
+          ],
+          "defendant": [
+            {
+              "name": "이의신청 대응",
+              "price": "300,000",
+              "duration": "1주",
+              "description": "채무자의 이의신청 대응"
+            }
+          ]
+        },
+        "tips": [
+          "채권증명서류 준비",
+          "채무자 주소 확인",
+          "이의신청 대비",
+          "집행문 발급 절차"
+        ]
+      }
+    }
+  ]
+} 

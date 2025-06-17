@@ -1,0 +1,291 @@
+{
+  "flowType": "criminal",
+  "imagePath": "/images/criminal/criminal-flow.png",
+  "areas": [
+    {
+      "id": "crime-occurrence",
+      "position": {
+        "x": 25.5,
+        "y": 0,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "범죄발생",
+      "details": {
+        "title": "범죄발생",
+        "description": "범죄가 발생하면 피해자와 피의자/피고인 모두에게 중요한 초기 단계입니다.",
+        "services": {
+          "victim": [
+            {
+              "name": "고소장 작성 지원",
+              "price": "30,000",
+              "duration": "1일",
+              "description": "피해 사실을 효과적으로 정리하여 고소장을 작성할 수 있도록 도와드립니다."
+            }
+          ],
+          "suspect": []
+        },
+        "tips": [
+          "증거를 신속하게 확보하세요.",
+          "경찰 신고는 112 또는 가까운 경찰서에서 가능합니다."
+        ]
+      }
+    },
+    {
+      "id": "police-investigation",
+      "position": {
+        "x": 25.5,
+        "y": 11.8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "경찰수사",
+      "details": {
+        "title": "경찰수사",
+        "description": "경찰이 범죄 사실을 조사하는 단계입니다. 피해자와 피의자/피고인 모두에게 중요한 절차가 진행됩니다.",
+        "services": {
+          "victim": [
+            {
+              "name": "진술서 작성 지원",
+              "price": "20,000",
+              "duration": "1일",
+              "description": "경찰 진술서 작성 시 필요한 내용을 정리해드립니다."
+            }
+          ],
+          "suspect": [
+            {
+              "name": "피의자신문 준비 상담",
+              "price": "40,000",
+              "duration": "1일",
+              "description": "경찰 조사에 대비한 피의자신문 준비를 도와드립니다."
+            }
+          ]
+        },
+        "tips": [
+          "진술은 신중하게 하세요.",
+          "변호사 조력을 받을 권리가 있습니다."
+        ]
+      }
+    },
+    {
+      "id": "sonchi",
+      "position": {
+        "x": 7.8,
+        "y": 23.5,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "송치",
+      "details": {
+        "title": "송치",
+        "description": "경찰이 수사 결과를 검찰에 송치하는 단계입니다.",
+        "services": {
+          "victim": [],
+          "suspect": [
+            {
+              "name": "송치 관련 상담",
+              "price": "80,000",
+              "duration": "1시간",
+              "description": "송치 절차 및 대응 방안 상담"
+            }
+          ]
+        },
+        "tips": [
+          "송치서류 확인",
+          "피해자 의견서 제출",
+          "추가 증거 제출"
+        ]
+      }
+    },
+    {
+      "id": "no-sonchi",
+      "position": {
+        "x": 43.4,
+        "y": 23.5,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "불송치",
+      "details": {
+        "title": "불송치",
+        "description": "경찰이 검찰에 송치하지 않기로 결정한 경우입니다.",
+        "services": [
+          {
+            "name": "이의신청 지원",
+            "price": "150,000",
+            "duration": "2시간",
+            "description": "불송치 결정에 대한 이의신청 지원"
+          }
+        ],
+        "tips": [
+          "불송치 사유 확인",
+          "이의신청 검토",
+          "추가 수사 요청"
+        ]
+      }
+    },
+    {
+      "id": "objection",
+      "position": {
+        "x": 79.4,
+        "y": 23.5,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "이의신청",
+      "details": {
+        "title": "이의신청",
+        "description": "불송치 결정에 대한 이의신청 절차입니다.",
+        "services": [
+          {
+            "name": "이의신청서 작성",
+            "price": "200,000",
+            "duration": "3시간",
+            "description": "효과적인 이의신청서 작성"
+          }
+        ],
+        "tips": [
+          "법적 근거 명시",
+          "새로운 증거 제시",
+          "기한 내 신청"
+        ]
+      }
+    },
+    {
+      "id": "prosecution-investigation",
+      "position": {
+        "x": 25.64,
+        "y": 35.33,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "검찰수사",
+      "details": {
+        "title": "검찰수사",
+        "description": "검찰 수사 단계에서의 피해자 권리와 지원 서비스입니다.",
+        "services": [
+          {
+            "name": "검찰 조사 동행",
+            "price": "200,000",
+            "duration": "반일",
+            "description": "검찰 조사 시 전문가 동행 지원"
+          },
+          {
+            "name": "의견서 작성",
+            "price": "120,000",
+            "duration": "2시간",
+            "description": "처벌 의견서 및 피해자 의견서 작성"
+          }
+        ],
+        "tips": [
+          "처벌 불원서 신중히 결정",
+          "피해자 국선변호사 신청",
+          "형사조정 참여 검토",
+          "항고/재정신청 권리 행사"
+        ]
+      }
+    },
+    {
+      "id": "trial",
+      "position": {
+        "x": 7.6,
+        "y": 47,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "기소",
+      "details": {
+        "title": "기소",
+        "description": "검찰이 피의자를 법정에 기소하는 단계입니다.",
+        "services": [
+          {
+            "name": "재판 준비 지원",
+            "price": "250,000",
+            "duration": "반일",
+            "description": "재판 출석 및 진술 준비 지원"
+          },
+          {
+            "name": "피해자 의견서 작성",
+            "price": "200,000",
+            "duration": "2시간",
+            "description": "재판부에 제출할 피해자 의견서 작성"
+          }
+        ],
+        "tips": [
+          "재판 일정 확인",
+          "증인 진술 준비",
+          "배상명령 신청 검토",
+          "피해자 참여권 행사"
+        ]
+      }
+    },
+    {
+      "id": "no-prosecution",
+      "position": {
+        "x": 43.6,
+        "y": 47,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "불기소",
+      "details": {
+        "title": "불기소",
+        "description": "검찰이 기소하지 않기로 결정한 경우입니다.",
+        "services": [
+          {
+            "name": "항고 지원",
+            "price": "300,000",
+            "duration": "1주",
+            "description": "불기소 결정에 대한 항고 지원"
+          },
+          {
+            "name": "재정신청 지원",
+            "price": "500,000",
+            "duration": "2주",
+            "description": "법원에 재정신청 절차 지원"
+          }
+        ],
+        "tips": [
+          "불기소 사유 확인",
+          "항고 기한 준수",
+          "재정신청 검토",
+          "민사소송 대안 고려"
+        ]
+      }
+    },
+    {
+      "id": "sentence-execution",
+      "position": {
+        "x": 7.6,
+        "y": 94.1,
+        "width": 20,
+        "height": 5.6
+      },
+      "title": "형 집행",
+      "details": {
+        "title": "형 집행",
+        "description": "형이 확정된 후 집행 과정에서의 피해자 권리입니다.",
+        "services": [
+          {
+            "name": "집행 통지 관리",
+            "price": "50,000",
+            "duration": "지속",
+            "description": "형 집행 관련 통지 사항 관리"
+          },
+          {
+            "name": "석방 통지 서비스",
+            "price": "30,000",
+            "duration": "지속",
+            "description": "가해자 석방 시 사전 통지 서비스"
+          }
+        ],
+        "tips": [
+          "형 집행 개시 통지",
+          "보호관찰 관련 통지",
+          "가석방 심사 시 의견 제출",
+          "석방 예정 통지 확인"
+        ]
+      }
+    }
+  ]
+} 
